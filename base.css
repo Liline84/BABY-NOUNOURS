@@ -1,1 +1,49 @@
-hvuv
+/* Conteneur de la grille */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
+  gap: 20px;                            /* Espace entre les cartes */
+  max-width: 800px;                     /* Largeur max du conteneur (ajustable) */
+  margin: 0 auto;                      /* Centre la grille sur la page */
+}
+
+/* Style de chaque carte */
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Image de la carte */
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Prix */
+.price {
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+/* Bouton */
+.product-card button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.product-card button:hover {
+  background-color: #218838;
+}
+
