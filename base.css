@@ -1,49 +1,132 @@
-/* Conteneur de la grille */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
-  gap: 20px;                            /* Espace entre les cartes */
-  max-width: 800px;                     /* Largeur max du conteneur (ajustable) */
-  margin: 0 auto;                      /* Centre la grille sur la page */
+/* --- 1. RÈGLES GÉNÉRALES --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Style de chaque carte */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333333;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* --- 2. EN-TÊTE (HEADER) --- */
+.Header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.LogoWrapper img {
+  height: 40px; /* Ajustez la taille de votre logo selon vos besoins */
+  width: auto;
+  display: block;
+}
+
+.Name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: 0.5px;
+}
+
+/* --- 3. SECTION INTRO & TITRES --- */
+.IntroWrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.WelcomeText {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 10px;
+}
+
+.SuggText {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #666666;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- 4. GRILLE DE PRODUITS --- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes par défaut */
+  gap: 20px;                            /* Espace entre les cartes */
+  max-width: 800px;                     /* Largeur maximale de la grille */
+  margin: 0 auto;                       /* Centrer la grille sur la page */
+}
+
+/* --- 5. CARTE DE PRODUIT (PRODUCT CARD) --- */
 .product-card {
+  background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 16px;
   text-align: center;
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Image de la carte */
+/* Petit effet sympa au survol de la carte */
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
 .product-card img {
   width: 100%;
-  height: auto;
+  height: 180px;         /* Hauteur fixe pour que toutes les images soient alignées */
+  object-fit: cover;     /* Évite que l'image soit déformée */
   border-radius: 6px;
-  object-fit: cover;
+  margin-bottom: 12px;
 }
 
-/* Prix */
+.product-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
 .price {
-  font-weight: bold;
-  color: #2c3e50;
-  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e63946;        /* Une couleur qui attire l'œil pour le prix */
+  margin-bottom: 12px;
 }
 
-/* Bouton */
 .product-card button {
-  background-color: #28a745;
-  color: white;
+  background-color: #111111;
+  color: #ffffff;
   border: none;
   padding: 10px 15px;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
   width: 100%;
+  transition: background-color 0.2s;
 }
 
 .product-card button:hover {
-  background-color: #218838;
+  background-color: #333333;
 }
 
+/* --- 6. RESPONSIVE (POUR SMARTPHONES) --- */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* Passe à 1 seule colonne sur petit écran */
+  }
+}
