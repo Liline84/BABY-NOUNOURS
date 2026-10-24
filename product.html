@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#39205f">
+  <meta name="description" content="Découvrez les détails de nos produits KN-BEAUTY et ajoutez vos favoris au panier.">
+
+  <title>Nos produits | KN-BEAUTY</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Un seul fichier CSS pour tout le site -->
+  <link rel="stylesheet" href="bas.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <header class="home-header" id="home-header">
+    <a class="header-logo" id="header-logo" href="index.html">
+      <img src="img/logo-kn.jpg" alt="Logo KN-BEAUTY">
+      <h1 class="header-h1">KN-BEAUTY</h1>
+    </a>
+
+    <nav class="header-actions" aria-label="Navigation principale">
+      <a class="header-cart" href="cart.html" aria-label="Voir le panier">
+        <span aria-hidden="true">♧</span> Panier
+        <span class="cart-count" hidden>0</span>
+      </a>
+      <a class="header-account" href="login.html">Connexion</a>
+    </nav>
+  </header>
+
+  <main class="page product-page" id="main-content">
+    <a class="back" href="products.html">
+      <span aria-hidden="true">←</span> Retour aux produits
+    </a>
+
+    <article class="detail" id="detail" aria-live="polite">
+      <!-- Le contenu du produit est généré par product.js -->
+    </article>
+
+    <section class="similar" id="similar" hidden>
+      <div class="section-heading">
+        <span class="section-eyebrow">À découvrir</span>
+        <h2>Vous aimerez aussi</h2>
+        <p>Découvrez d'autres articles sélectionnés pour vous.</p>
+      </div>
+
+      <ul class="grid" id="similar-grid"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html" class="footer-brand">KN-BEAUTY</a>
+    <p>Votre beauté, notre passion.</p>
+    <span>© <span id="footer-year"></span> KN-BEAUTY</span>
+  </footer>
+
+  <script src="shop.js" defer></script>
+  <script src="cart.js" defer></script>
+  <script src="product.js" defer></script>
+  <script>
+    document.getElementById("footer-year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>

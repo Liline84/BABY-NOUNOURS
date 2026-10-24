@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#39205f">
+  <meta
+    name="description"
+    content="Découvrez KN-BEAUTY : soins de la peau, maquillage et accessoires beauté sélectionnés avec soin."
+  >
+  <meta name="robots" content="index, follow">
+
+  <title>KN-BEAUTY | Beauté, soins et élégance</title>
+
+  <!-- Optimisation du chargement des polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Feuille CSS principale -->
+  <link rel="stylesheet" href="base.css">
+
+  <!-- Si tes styles sont encore dans base.css, remplace home.css par base.css. -->
+</head>
+
+<body>
+
+  <!-- Accès rapide au contenu -->
+  <a class="skip-link" href="#main-content">
+    Aller au contenu principal
+  </a>
+
+  <!-- En-tête principal -->
+  <header class="home-header" id="home-header">
+
+    <a
+      class="header-logo"
+      id="header-logo"
+      href="index.html"
+      aria-label="KN-BEAUTY, accueil"
+    >
+      <img
+        src="img/logo-kn.jpg"
+        alt=""
+        width="48"
+        height="48"
+        fetchpriority="high"
+      >
+
+      <span class="header-h1">KN-BEAUTY</span>
+    </a>
+
+    <nav class="header-actions" aria-label="Navigation principale">
+
+      <a
+        class="header-cart"
+        href="cart.html"
+        aria-label="Consulter le panier"
+      >
+        <span aria-hidden="true">♧</span>
+        Panier
+        <span class="cart-count" aria-live="polite" hidden>0</span>
+      </a>
+
+      <a class="header-account" href="login.html">
+        Connexion
+      </a>
+
+    </nav>
+
+  </header>
+
+  <!-- Contenu principal -->
+  <main id="main-content">
+
+    <!-- Bannière d'accueil -->
+    <section class="hero" aria-labelledby="hero-title">
+
+      <p class="hero-eyebrow">KN-BEAUTY · BEAUTÉ & ÉLÉGANCE</p>
+
+      <h1 id="hero-title">
+        Prenez soin de votre peau, au quotidien.
+      </h1>
+
+      <p>
+        Soins, maquillage et accessoires choisis pour vous.
+        Révélez votre beauté avec une sélection pensée pour votre quotidien.
+      </p>
+
+      <a class="btn" href="products.html">
+        Découvrir nos produits
+        <span aria-hidden="true">→</span>
+      </a>
+
+    </section>
+
+    <!-- Nouveautés -->
+    <section
+      class="rail-section"
+      aria-labelledby="titre-nouveautes"
+    >
+
+      <div class="rail-head">
+        <div>
+          <p class="section-eyebrow">À découvrir</p>
+          <h2 id="titre-nouveautes">Nos nouveautés</h2>
+        </div>
+
+        <a class="see-more" href="products.html">
+          Tout découvrir
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="rail-wrap">
+
+        <button
+          class="rail-btn prev"
+          type="button"
+          aria-label="Faire défiler les nouveautés vers la gauche"
+        >
+          &#8249;
+        </button>
+
+        <ul
+          class="rail"
+          data-rail="nouveautes"
+          aria-label="Liste des nouveaux produits"
+        ></ul>
+
+        <button
+          class="rail-btn next"
+          type="button"
+          aria-label="Faire défiler les nouveautés vers la droite"
+        >
+          &#8250;
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- Meilleures ventes -->
+    <section
+      class="rail-section"
+      aria-labelledby="titre-vendus"
+    >
+
+      <div class="rail-head">
+        <div>
+          <p class="section-eyebrow">Les favoris</p>
+          <h2 id="titre-vendus">Les plus vendus</h2>
+        </div>
+
+        <a class="see-more" href="products.html">
+          Voir la collection
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="rail-wrap">
+
+        <button
+          class="rail-btn prev"
+          type="button"
+          aria-label="Faire défiler les meilleures ventes vers la gauche"
+        >
+          &#8249;
+        </button>
+
+        <ul
+          class="rail"
+          data-rail="vendus"
+          aria-label="Liste des produits les plus vendus"
+        ></ul>
+
+        <button
+          class="rail-btn next"
+          type="button"
+          aria-label="Faire défiler les meilleures ventes vers la droite"
+        >
+          &#8250;
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- Invitation à découvrir le catalogue -->
+    <section class="catalogue-cta" aria-labelledby="catalogue-title">
+
+      <div>
+        <p class="section-eyebrow">Votre prochaine découverte</p>
+
+        <h2 id="catalogue-title">
+          Trouvez vos essentiels beauté.
+        </h2>
+
+        <p>
+          Explorez notre catalogue et trouvez les produits qui
+          correspondent à vos envies.
+        </p>
+      </div>
+
+      <a class="btn" href="products.html">
+        Explorer la boutique
+        <span aria-hidden="true">→</span>
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">KN-BEAUTY</a>
+
+    <p>
+      La beauté dans chaque détail.
+    </p>
+
+    <small>
+      &copy; <span id="footer-year"></span> KN-BEAUTY.
+      Tous droits réservés.
+    </small>
+  </footer>
+
+  <!-- Scripts chargés après l'analyse du HTML -->
+  <script src="shop.js" defer></script>
+  <script src="cart.js" defer></script>
+  <script src="home.js" defer></script>
+
+  <script>
+    document.getElementById("footer-year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>

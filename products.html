@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tous les produits | KN-BEAUTY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="base.css" />
+  </head>
+  <body>
+    <header class="home-header" id="home-header">
+      <a class="header-logo" id="header-logo" href="index.html">
+        <img src="img/logo-kn.jpg" alt="Logo KN-BEAUTY" />
+        <h1 class="header-h1">KN-BEAUTY</h1>
+      </a>
+      <div class="header-actions">
+        <a class="header-cart" href="cart.html" aria-label="Panier">Panier <span class="cart-count" hidden>0</span></a>
+        <a class="header-account" href="login.html">Connexion</a>
+      </div>
+    </header>
+
+    <main class="catalogue">
+      <h2 class="catalogue-title">Tous les produits</h2>
+
+      <div class="toolbar">
+        <input type="search" id="search" placeholder="Rechercher un produit" aria-label="Rechercher un produit" />
+        <select id="sort" aria-label="Trier les produits">
+          <option value="defaut">Trier par défaut</option>
+          <option value="prix-asc">Prix croissant</option>
+          <option value="prix-desc">Prix décroissant</option>
+          <option value="nom">Nom (A à Z)</option>
+        </select>
+      </div>
+
+      <div class="chips" id="chips" role="group" aria-label="Catégories"></div>
+
+      <p class="count" id="count" aria-live="polite"></p>
+      <ul class="grid" id="grid"></ul>
+      <p class="empty" id="empty" hidden>Aucun produit ne correspond à votre recherche.</p>
+    </main>
+
+    <script src="shop.js"></script>
+    <script src="cart.js"></script>
+    <script src="products.js"></script>
+  </body>
+</html>

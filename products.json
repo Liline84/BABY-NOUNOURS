@@ -1,0 +1,115 @@
+{
+  "devise": "HTG",
+  "produits": [
+    {
+      "id": "serum-vitamine-c",
+      "nom": "Sérum éclat vitamine C",
+      "prix": 1500,
+      "categorie": "Soins visage",
+      "image": "img/produits/serum.jpg",
+      "nouveau": true,
+      "populaire": false,
+      "description": "Un sérum léger qui aide à raviver l'éclat du teint. À appliquer matin et soir avant la crème."
+    },
+    {
+      "id": "creme-hydratante",
+      "nom": "Crème hydratante visage",
+      "prix": 1200,
+      "categorie": "Soins visage",
+      "image": "img/produits/creme.jpg",
+      "nouveau": true,
+      "populaire": false,
+      "description": "Une crème confortable pour hydrater le visage toute la journée, sur peau propre."
+    },
+    {
+      "id": "rouge-a-levres-mat",
+      "nom": "Rouge à lèvres mat",
+      "prix": 800,
+      "categorie": "Maquillage",
+      "image": "img/produits/rouge.jpg",
+      "nouveau": true,
+      "populaire": false,
+      "description": "Un rouge à lèvres au fini mat, couleur intense et texture confortable."
+    },
+    {
+      "id": "palette-yeux",
+      "nom": "Palette yeux 12 couleurs",
+      "prix": 1800,
+      "categorie": "Maquillage",
+      "image": "img/produits/palette.jpg",
+      "nouveau": true,
+      "populaire": false,
+      "description": "Douze teintes mates et nacrées pour créer des looks du quotidien ou de soirée."
+    },
+    {
+      "id": "huile-cheveux",
+      "nom": "Huile nourrissante cheveux",
+      "prix": 950,
+      "categorie": "Cheveux",
+      "image": "img/produits/huile.jpg",
+      "nouveau": true,
+      "populaire": false,
+      "description": "Une huile qui nourrit les longueurs et apporte de la brillance aux cheveux secs."
+    },
+    {
+      "id": "masque-argile",
+      "nom": "Masque purifiant argile",
+      "prix": 700,
+      "categorie": "Soins visage",
+      "image": "img/produits/masque.jpg",
+      "nouveau": true,
+      "populaire": false,
+      "description": "Un masque à l'argile pour nettoyer la peau en profondeur. À utiliser une à deux fois par semaine."
+    },
+    {
+      "id": "gel-nettoyant",
+      "nom": "Gel nettoyant doux",
+      "prix": 650,
+      "categorie": "Soins visage",
+      "image": "img/produits/gel.jpg",
+      "nouveau": false,
+      "populaire": true,
+      "description": "Un gel doux qui élimine impuretés et maquillage sans tirailler la peau."
+    },
+    {
+      "id": "fond-de-teint",
+      "nom": "Fond de teint longue tenue",
+      "prix": 1400,
+      "categorie": "Maquillage",
+      "image": "img/produits/fond-de-teint.jpg",
+      "nouveau": false,
+      "populaire": true,
+      "description": "Un fond de teint à la couvrance modulable, pensé pour tenir toute la journée."
+    },
+    {
+      "id": "mascara-volume",
+      "nom": "Mascara volume",
+      "prix": 750,
+      "categorie": "Maquillage",
+      "image": "img/produits/mascara.jpg",
+      "nouveau": false,
+      "populaire": true,
+      "description": "Un mascara qui donne du volume et sépare les cils sans paquets."
+    },
+    {
+      "id": "beurre-karite",
+      "nom": "Beurre de corps karité",
+      "prix": 900,
+      "categorie": "Corps",
+      "image": "img/produits/beurre.jpg",
+      "nouveau": false,
+      "populaire": true,
+      "description": "Un beurre de corps riche au karité pour nourrir et adoucir la peau."
+    },
+    {
+      "id": "set-pinceaux",
+      "nom": "Set de pinceaux maquillage",
+      "prix": 1100,
+      "categorie": "Accessoires",
+      "image": "img/produits/pinceaux.jpg",
+      "nouveau": false,
+      "populaire": true,
+      "description": "Un set de pinceaux pour le teint et les yeux, avec une brosse souple et dense."
+    }
+  ]
+}
